@@ -1,6 +1,6 @@
 %define module  Data-FormValidator
 %define name    perl-%{module}
-%define version 4.50
+%define version 4.51
 %define release %mkrel 1
 
 Name:           %{name}
@@ -10,7 +10,7 @@ Summary:        Validates user input based on input profile
 License:        Artistic/GPL
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Data/%{module}-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/Data/%{module}-%{version}.tar.gz
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Date::Calc)
 BuildRequires:  perl(File::MMagic)
@@ -18,6 +18,7 @@ BuildRequires:  perl(Image::Size)
 BuildRequires:  perl(Regexp::Common)
 BuildRequires:  perl(CGI)
 BuildRequires:  perl(MIME::Types)
+BuildRequires:  perl(Perl6::Junction)
 BuildArch:      noarch
 Buildroot:      %{_tmppath}/%{name}-%{version}
 
