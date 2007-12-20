@@ -20,6 +20,7 @@ BuildRequires:  perl(CGI)
 BuildRequires:  perl(MIME::Types)
 BuildRequires:  perl(Perl6::Junction)
 BuildArch:      noarch
+Buildroot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Data::FormValidator's main aim is to make input validation expressible in a
