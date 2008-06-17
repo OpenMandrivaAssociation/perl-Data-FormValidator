@@ -1,6 +1,6 @@
 %define module  Data-FormValidator
 %define name    perl-%{module}
-%define version 4.57
+%define version 4.61
 %define release %mkrel 1
 
 Name:           %{name}
