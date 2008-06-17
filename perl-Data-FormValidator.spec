@@ -19,6 +19,7 @@ BuildRequires:  perl(Regexp::Common)
 BuildRequires:  perl(CGI)
 BuildRequires:  perl(MIME::Types)
 BuildRequires:  perl(Perl6::Junction)
+BuildRequires:  perl(Email::Valid)
 BuildArch:      noarch
 Buildroot:      %{_tmppath}/%{name}-%{version}
 
