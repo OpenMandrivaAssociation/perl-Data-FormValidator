@@ -1,16 +1,16 @@
-%define module  Data-FormValidator
-%define name    perl-%{module}
-%define version 4.63
-%define release %mkrel 1
+%define upstream_name    Data-FormValidator
+%define upstream_version 4.63
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        Validates user input based on input profile
-License:        Artistic/GPL
-Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Data/%{module}-%{version}.tar.gz
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Validates user input based on input profile
+License:    Artistic/GPL
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Date::Calc)
 BuildRequires:  perl(File::MMagic)
@@ -21,7 +21,7 @@ BuildRequires:  perl(MIME::Types)
 BuildRequires:  perl(Perl6::Junction)
 BuildRequires:  perl(Email::Valid)
 BuildArch:      noarch
-Buildroot:      %{_tmppath}/%{name}-%{version}
+Buildroot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Data::FormValidator's main aim is to make input validation expressible in a
@@ -33,7 +33,7 @@ invalid results, return error messages about which constraints failed, or
 process the resulting valid data.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
