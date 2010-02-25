@@ -1,5 +1,5 @@
 %define upstream_name    Data-FormValidator
-%define upstream_version 4.65
+%define upstream_version 4.66
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
