@@ -1,2 +1,4 @@
+removed_sources:
+  Data-FormValidator-4.66.tar.gz: 0d3b0fd71544ab4568e2480f8f6e095530a3fba8
 sources:
-  "Data-FormValidator-4.66.tar.gz": 0d3b0fd71544ab4568e2480f8f6e095530a3fba8
+  Data-FormValidator-4.81.tar.gz: 62c80dec1ac5c036347233cad6d20178e431a602
