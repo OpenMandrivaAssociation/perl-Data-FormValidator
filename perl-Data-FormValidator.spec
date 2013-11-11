@@ -45,7 +45,7 @@ process the resulting valid data.
 ./Build install destdir=%buildroot
 
 %files
-%doc README RELEASE_NOTES
+%doc  RELEASE_NOTES
 %{perl_vendorlib}/Data
 %{_mandir}/*/*
 
