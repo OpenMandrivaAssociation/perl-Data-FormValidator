@@ -8,7 +8,7 @@ Release:    3
 Summary:    Validates user input based on input profile
 License:    Artistic/GPL
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Data/Data-FormValidator-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Module::Build)
