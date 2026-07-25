@@ -1,15 +1,15 @@
 %define upstream_name    Data-FormValidator
-%define upstream_version 4.81
+%define upstream_version 4.88
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Validates user input based on input profile
 License:    Artistic/GPL
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/Data-FormValidator-%{upstream_version}.tar.gz
+Url:        https://github.com/dnmfarrell/Data-FormValidator
+Source0:    https://cpan.metacpan.org/authors/id/D/DF/DFARRELL/Data-FormValidator-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Date::Calc)
