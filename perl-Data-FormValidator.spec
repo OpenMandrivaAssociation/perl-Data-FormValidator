@@ -1,15 +1,13 @@
 %define upstream_name    Data-FormValidator
-%define upstream_version 4.88
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    4.88
+Release:    2
 
 Summary:    Validates user input based on input profile
 License:    Artistic/GPL
 Group:      Development/Perl
 Url:        https://github.com/dnmfarrell/Data-FormValidator
-Source0:    https://cpan.metacpan.org/authors/id/D/DF/DFARRELL/Data-FormValidator-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/D/DF/DFARRELL/Data-FormValidator-%{version}.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Date::Calc)
@@ -32,7 +30,7 @@ invalid results, return error messages about which constraints failed, or
 process the resulting valid data.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -69,9 +67,7 @@ process the resulting valid data.
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 4.630.0-1mdv2010.0
 + Revision: 406970
-- rebuild using %%perl_convert_version
-
-* Sun Jan 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 4.63-1mdv2009.1
+- rebuild using %4.88 Sun Jan 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 4.63-1mdv2009.1
 + Revision: 324492
 - update to new version 4.63
 
